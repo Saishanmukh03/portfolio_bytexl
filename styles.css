@@ -1,0 +1,268 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+:target{
+    padding-top: 12vh;
+    margin-top: 12vh;
+}
+
+/* Constrain content width */
+header, section, footer {
+    width: 100%;
+    max-width: 1550px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    margin-top: 0vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position:sticky;
+    top:0;
+    left:0;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .header-right ul {
+    list-style: none;
+    display: flex;
+}
+
+header .header-right li {
+    margin-left: 20px;
+}
+
+header .header-right a:hover {
+    color: #e8491d;
+}
+/* Home Section */
+.home {
+    height: auto;
+    display: flex;
+    margin-left: 0%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    color: #35424a;
+    border-bottom: none;
+}
+
+.home .tagline {
+    font-size: 1.5rem;
+    color: #e8491d;
+}
+#home:target {
+    padding-top: 100px; /* Adjust this value to match your header height */
+    margin-top: -100px; /* Offset to negate the added padding */
+}
+
+
+
+/* Section Styles */
+section {
+    background: #ffffff;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+section h3{
+    margin-top: 5vh;
+}
+
+/* About Section */
+/* About Section */
+.about h3 {
+    color: #35424a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about .interests {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about .interests li {
+    background-color: #e8491d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Existing about section styles remain here */
+.about table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.about th, .about td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.about th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects .project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects .project {
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.projects .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projects h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    margin-bottom: 15px;
+}
+
+.projects .project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.projects .btn {
+    display: inline-block;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.projects .btn:hover {
+    background-color: #e8491d;
+}
+
+/* Responsive design for projects */
+@media (max-width: 768px) {
+    .projects .project-container {
+        flex-direction: column;
+    }
+}
+
+/* Contact Section */
+.contact form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    background-color: #e8491d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #35424a;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .header-right ul {
+        margin-top: 20px;
+    }
+
+    header .header-right li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
